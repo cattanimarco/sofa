@@ -7,6 +7,7 @@ More info at http://cattanimarco.com/2013/11/20/sofa/
 RUN DEMO
 ====
 1) Go to SOFA's example application and compile
+
 	cd contiki/examples/sofa/
 	make clean TARGET=sky; make TARGET=sky
 
@@ -24,9 +25,12 @@ Instructions to install SOFA on InstantContiki 2.6.1
 2) Download SOFA's patch file (sofa.patch)
 	
 3) Go to the contiki folder and apply the patch
+
 	cd ~/contiki
 	patch -p1 < ~/sofa.patch
+	
 The resulting output should look like this:
+
 	patching file core/net/mac/Makefile.mac
 	patching file core/net/mac/sofamac.c
 	patching file core/net/mac/sofamac.h
